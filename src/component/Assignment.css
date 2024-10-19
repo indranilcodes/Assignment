@@ -1,0 +1,26 @@
+.assignment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .difficulty {
+    background-color: #4caf50; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    margin: 10px 0; /* Vertical margin for spacing */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .difficulty:hover {
+    background-color: #45a049; /* Change background on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  

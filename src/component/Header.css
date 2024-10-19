@@ -1,0 +1,55 @@
+.navbar {
+    background-color: #373232; /* Set background color */
+    padding: 10px; /* Add some padding */
+    text-align: center; /* Align text to the center */
+    position: fixed; /* Set position to fixed */
+    width: 100%; /* Set width to 100% */
+    top: 0;
+  }
+  
+  .navbar p {
+    font-family: Arial, sans-serif; /* Set font family */
+    font-size: 24px; /* Set font size */
+    color: #e0e1e1; /* Set font color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add some letter spacing */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .page-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #110e0e;
+  }
+  
+  .buttons-container {
+    display: flex;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    /* background-color: #4CAF50; */
+    /* color: white; */
+    border: none;
+    cursor: pointer;
+  }
+
+  
+
+
+  button:hover {
+    /* background-color: #45a049; */
+  }
+  
+  
+  .page-info p {
+    margin: 0;
+    color: white;
+  }

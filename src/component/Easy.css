@@ -1,0 +1,116 @@
+/* Main container styles */
+.container {
+  padding: 40px;
+  text-align: center;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+/* Title style */
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Fetch button */
+.fetch-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.fetch-button:hover {
+  background-color: #0056b3;
+}
+
+/* Loader animation */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error message style */
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+/* No data message style */
+.no-data {
+  font-size: 18px;
+  color: #777;
+}
+
+/* Grid layout - default for small screens (1 or 2 items) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding-top: 20px;
+}
+
+/* Card styles */
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Cat image style */
+.cat-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card text */
+.card h4 {
+  font-size: 16px;
+  color: #333;
+  padding: 10px;
+}
+
+/* Media queries for larger screens */
+
+/* For laptop size and larger (min-width: 1024px), show 3 items per row */
+@media (min-width: 1024px) {
+  .grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  }
+}
+
+/* For large desktop screens (min-width: 1440px), keep 3 items per row */
+@media (min-width: 1440px) {
+  .grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  }
+}

@@ -1,0 +1,74 @@
+/* Container for the cards */
+.containerh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+/* Style for each card */
+.card {
+    width: 100%; /* Default to full width */
+    max-width: 800px; /* Ensure it doesn't exceed a reasonable size on larger screens */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 16px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Image inside the card */
+.card img {
+    width: 100%; /* Take full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Title of the card */
+.card h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Loading text styling */
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    padding: 20px;
+}
+
+/* Media query for responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Card takes up 90% of the screen on small devices */
+    }
+}
+
+/* Media query for large screens (laptops/desktops) */
+@media (min-width: 1024px) {
+    .card {
+        width: 70%; /* Wider cards on larger screens */
+    }
+}
+
+/* Media query for extra-large screens (4K displays and large monitors) */
+@media (min-width: 1440px) {
+    .card {
+        width: 60%; /* Further widen cards on extra-large screens */
+    }
+}

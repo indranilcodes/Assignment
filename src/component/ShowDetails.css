@@ -1,0 +1,105 @@
+/* Main details section container */
+.details-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading style */
+.details-section h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Cat image styling */
+.details-section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Information about the cat */
+.details-section p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Bold label styling */
+.details-section p strong {
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* Link styling */
+.details-section a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.details-section a:hover {
+    color: #0056b3;
+}
+
+/* Container for the navigation buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px; /* Space between the buttons */
+}
+
+/* Styling for the individual buttons */
+.nav-button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.nav-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Active/pressed state */
+.nav-button:active {
+    background-color: #003f7f; /* Even darker blue when clicked */
+    transform: scale(0.95); /* Shrink slightly on click */
+}
+
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .details-section {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .details-section h3 {
+        font-size: 24px;
+    }
+
+    .details-section p {
+        font-size: 16px;
+    }
+}
